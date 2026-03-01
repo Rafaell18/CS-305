@@ -1,1 +1,9 @@
-# CS-305
+This repository contains my finished Artemis Financial Vulnerability Assessment Report for CS 305 - Software Security CS 305 Project One. Motivation In this project, I collaborated with a financial company named Artemis Financial that provides services of financial planning. Their software must be secure, as the company deals with sensitive financial data. This company struggled to look for security vulnerabilities in their web application and protect itself.
+
+I've identified a few security issues during my review. The application wasn't using HTTPS, allowing clear-text transmission of sensitive data. This means that database usernames and passwords were hard coded in the code which is bad if someone got access to source files. It also lacked authentication, meaning that unauthorized users could potentially gain access. Furthermore, there was no proper validation of user input which makes it susceptible to security attacks CS 305 Project One.
+
+I ran a dependency-check scan, and found a lot of deprecated libraries with known security vulnerabilities. BC, Log4j, Spring Core and Apache Tomcat had already documented CVEs (Common Vulnerabilities and Exposures) CS 305 Project One. Assembling this type of analysis relies heavily on reading and interpreting these vulnerability reports, which was both the most difficult yet valuable aspect of the assignment.
+
+To address these problems, I suggested using HTTPS to encrypt communication, eliminate hardcoded credentials and instead store them securely, validate user input, implement authentication measures, and update all antiquated software dependencies CS 305 Project One. However, these upgrades would lead to a system that is significantly more secure and protects customer financial information better.
+
+The project demonstrates my ability to recognize security risks, comprehend vulnerability reports, and devise a straightforward strategy for enhancing software security. This work would be successful in showing potential employers that I understand secure coding principles and how to assess for vulnerabilities, both of which are elements of a real financial application.
